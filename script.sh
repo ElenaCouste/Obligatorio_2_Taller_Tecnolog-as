@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Ruta para ir al repositorio donde se encuentra el proyecto.
-cd /c/desktop/ORT/Obligatorio_2
+cd /c/Users/Elena/Desktop/ORT/Obligatorio_2
 
 # git diff-index --quiet HEAD -- comprueba si hay cambios en el repositorio.
 # Si no hay cambios, muestra un mensaje y lo manda al archivo README.md del repositorio.
@@ -21,5 +21,3 @@ else
     # Mandamos la informacion al archivo README.md del repositorio.
     echo "Commit automático semanal: $lineasModificadas" >> README.md
 fi
-
-bash -c "/c/desktop/ORT/Obligatorio_2/script.sh"
