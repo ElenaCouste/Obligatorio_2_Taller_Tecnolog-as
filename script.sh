@@ -13,12 +13,12 @@ if [[git diff-index --quiet HEAD --]]; then
     echo "No hay cambios para commitear" >> README.md
 else 
     # De lo contrario, obtenemos el numero de lineas modificadas en el archivo del repositorio desde el último commit. 
-    lineasModificadas=$(git diff --stat | tail -n 1)
+    lineasModificadas=$(git diff --stat | tail -n 10)
     echo "Líneas modificadas: $lineasModificadas"
-    
+    fechaDia=$(date +"%d-%m-%Y")
     # Se hace un commit y push de los cambios.
     git add .
-    git commit -m "Commit automático semanal"
+    git commit -m "Commit automático semanal " + $fechaDia
     git push origin main
     
     # Mandamos la informacion al archivo README.md del repositorio.
