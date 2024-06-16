@@ -1,4 +1,7 @@
 #!/bin/bash
+#Elena Couste - 333562
+#Martín Valetta - 251093
+#Massimo Cantú - 237773
 
 #Ruta para ir al repositorio donde se encuentra el proyecto.
 cd /c/Users/Elena/Desktop/ORT/Obligatorio_2
