@@ -7,12 +7,12 @@
 cd ~/Desktop/ORT/TT1/Obligatorio_2_Taller_Tecnolog-as
 
 # git diff-index --quiet HEAD -- comprueba si hay cambios en el repositorio.
-# Si no hay cambios, muestra un mensaje y lo manda al archivo README.md del repositorio.
-
+# Luego se chequea la variable de retorno ($?) que es 1 si el comando se ejecuto correctamente, y 0 si no lo hizo.
+# Cuando no hay diferencias el comando diff-index retorna 0.
 git diff-index --quiet HEAD --
 if [[ $? -eq 0 ]]; then
+    # Si no hay cambios, muestra un mensaje y lo manda al archivo README.md del repositorio.
     echo "No hay cambios para commitear"
-    echo "No hay cambios para commitear" >> README.md
 else 
     # De lo contrario, obtenemos el numero de lineas modificadas en el archivo del repositorio desde el último commit. 
     lineasModificadas=$(git diff --stat | tail -n 10)
