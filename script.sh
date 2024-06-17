@@ -18,10 +18,9 @@ else
     # Se hace un commit y push de los cambios.
     fechaDia=$(date +"%d-%m-%Y")
     git add .
-    git commit -m "Commit automático semanal {$fechaDia}"
+    git commit -m "Commit automático semanal $fechaDia"
     git push origin main
-    echo $fechaDia
     
     # Mandamos la informacion al archivo README.md del repositorio.
-    echo "Commit automático semanal: $lineasModificadas" >> README.md
+    echo "Commit automático semanal $fechaDia: $lineasModificadas" >> README.md
 fi
