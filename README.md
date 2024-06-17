@@ -9,3 +9,4 @@ Commit automático semanal 16-06-2024:  README.md | 1 +
 Commit automático semanal :  README.md | 3 +++
  script.sh | 7 ++++---
  2 files changed, 7 insertions(+), 3 deletions(-)
+Commit automático semanal : 
