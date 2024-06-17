@@ -8,7 +8,9 @@ cd ~/Desktop/ORT/TT1/Obligatorio_2_Taller_Tecnolog-as
 
 # git diff-index --quiet HEAD -- comprueba si hay cambios en el repositorio.
 # Si no hay cambios, muestra un mensaje y lo manda al archivo README.md del repositorio.
-if [[git diff-index --quiet HEAD]]; then
+
+git diff-index --quiet HEAD --
+if [[ $? -eq 0 ]]; then
     echo "No hay cambios para commitear"
     echo "No hay cambios para commitear" >> README.md
 else 

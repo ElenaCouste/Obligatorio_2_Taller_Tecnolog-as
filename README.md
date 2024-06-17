@@ -10,3 +10,5 @@ Commit automático semanal :  README.md | 3 +++
  script.sh | 7 ++++---
  2 files changed, 7 insertions(+), 3 deletions(-)
 Commit automático semanal : 
+Commit automático semanal :  script.sh | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
